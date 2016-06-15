@@ -1,3 +1,11 @@
+let channels = [
+  {name: 'Buyer Support'},
+  {name: 'Seller Support'},
+  {name: 'San Francisco Bay Area Support'},
+  {name: 'Los Angeles Support'}
+];
+
+
 class Channel extends React.Component {
     onClick() {
         console.log('I was clicked', this.props.name);
@@ -10,4 +18,19 @@ class Channel extends React.Component {
     }
 }
 
-ReactDOM.render(<Channel name='Buyer Support'/>, document.getElementById('app'));
+class ChannelList extends React.Component { 
+    render() {
+        return (
+            <ul> 
+                {this.props.channels.map( channel => {
+                    return (
+                        <Channel name={channel.name} />
+                    )
+                  }  
+                )}
+            </ul>
+        )
+    }
+}
+
+ReactDOM.render(<ChannelList channels={channels} />, document.getElementById('app'));
