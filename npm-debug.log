@@ -1,0 +1,156 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   '-g',
+1 verbose cli   'serve' ]
+2 info using npm@2.15.5
+3 info using node@v4.4.5
+4 verbose install initial load of /usr/local/lib/package.json
+5 verbose readDependencies loading dependencies from /usr/local/lib/package.json
+6 silly cache add args [ 'serve', null ]
+7 verbose cache add spec serve
+8 silly cache add parsed spec Result {
+8 silly cache add   raw: 'serve',
+8 silly cache add   scope: null,
+8 silly cache add   name: 'serve',
+8 silly cache add   rawSpec: '',
+8 silly cache add   spec: 'latest',
+8 silly cache add   type: 'tag' }
+9 silly addNamed serve@latest
+10 verbose addNamed "latest" is being treated as a dist-tag for serve
+11 info addNameTag [ 'serve', 'latest' ]
+12 silly mapToRegistry name serve
+13 silly mapToRegistry using default registry
+14 silly mapToRegistry registry https://registry.npmjs.org/
+15 silly mapToRegistry data Result {
+15 silly mapToRegistry   raw: 'serve',
+15 silly mapToRegistry   scope: null,
+15 silly mapToRegistry   name: 'serve',
+15 silly mapToRegistry   rawSpec: '',
+15 silly mapToRegistry   spec: 'latest',
+15 silly mapToRegistry   type: 'tag' }
+16 silly mapToRegistry uri https://registry.npmjs.org/serve
+17 verbose addNameTag registry:https://registry.npmjs.org/serve not in flight; fetching
+18 verbose request uri https://registry.npmjs.org/serve
+19 verbose request no auth needed
+20 info attempt registry request try #1 at 4:57:31 PM
+21 verbose request id 14659f536351d8ec
+22 verbose etag "6IHHKEJ1XC1YI0A2HR3VEPXGK"
+23 http request GET https://registry.npmjs.org/serve
+24 http 304 https://registry.npmjs.org/serve
+25 verbose headers { date: 'Tue, 14 Jun 2016 23:57:31 GMT',
+25 verbose headers   via: '1.1 varnish',
+25 verbose headers   'cache-control': 'max-age=300',
+25 verbose headers   etag: '"6IHHKEJ1XC1YI0A2HR3VEPXGK"',
+25 verbose headers   age: '143',
+25 verbose headers   connection: 'keep-alive',
+25 verbose headers   'x-served-by': 'cache-sjc3133-SJC',
+25 verbose headers   'x-cache': 'HIT',
+25 verbose headers   'x-cache-hits': '2',
+25 verbose headers   'x-timer': 'S1465948651.656559,VS0,VE0',
+25 verbose headers   vary: 'Accept-Encoding' }
+26 silly get cb [ 304,
+26 silly get   { date: 'Tue, 14 Jun 2016 23:57:31 GMT',
+26 silly get     via: '1.1 varnish',
+26 silly get     'cache-control': 'max-age=300',
+26 silly get     etag: '"6IHHKEJ1XC1YI0A2HR3VEPXGK"',
+26 silly get     age: '143',
+26 silly get     connection: 'keep-alive',
+26 silly get     'x-served-by': 'cache-sjc3133-SJC',
+26 silly get     'x-cache': 'HIT',
+26 silly get     'x-cache-hits': '2',
+26 silly get     'x-timer': 'S1465948651.656559,VS0,VE0',
+26 silly get     vary: 'Accept-Encoding' } ]
+27 verbose etag https://registry.npmjs.org/serve from cache
+28 verbose get saving serve to /Users/kevinwu/.npm/registry.npmjs.org/serve/.cache.json
+29 verbose correctMkdir /Users/kevinwu/.npm correctMkdir not in flight; initializing
+30 silly addNameTag next cb for serve with tag latest
+31 silly addNamed serve@1.4.0
+32 verbose addNamed "1.4.0" is a plain semver version for serve
+33 silly cache afterAdd serve@1.4.0
+34 verbose afterAdd /Users/kevinwu/.npm/serve/1.4.0/package/package.json not in flight; writing
+35 verbose correctMkdir /Users/kevinwu/.npm correctMkdir not in flight; initializing
+36 verbose afterAdd /Users/kevinwu/.npm/serve/1.4.0/package/package.json written
+37 silly install resolved [ { name: 'serve',
+37 silly install resolved     version: '1.4.0',
+37 silly install resolved     description: 'Simple command-line file / directory server built with connect',
+37 silly install resolved     keywords: [ 'static', 'server', 'connect' ],
+37 silly install resolved     author: { name: 'TJ Holowaychuk', email: 'tj@vision-media.ca' },
+37 silly install resolved     preferGlobal: true,
+37 silly install resolved     homepage: 'https://github.com/visionmedia/serve',
+37 silly install resolved     repository:
+37 silly install resolved      { type: 'git',
+37 silly install resolved        url: 'git+https://github.com/visionmedia/serve.git' },
+37 silly install resolved     dependencies:
+37 silly install resolved      { connect: '2.3.x',
+37 silly install resolved        stylus: '*',
+37 silly install resolved        jade: '*',
+37 silly install resolved        'less-middleware': '*',
+37 silly install resolved        commander: '0.6.1' },
+37 silly install resolved     bin: { serve: './bin/serve' },
+37 silly install resolved     bugs: { url: 'https://github.com/visionmedia/serve/issues' },
+37 silly install resolved     _id: 'serve@1.4.0',
+37 silly install resolved     dist:
+37 silly install resolved      { shasum: 'e35f3ce6b42586b7f3ded7b5b0a31a01bb0e1005',
+37 silly install resolved        tarball: 'https://registry.npmjs.org/serve/-/serve-1.4.0.tgz' },
+37 silly install resolved     _from: 'serve@latest',
+37 silly install resolved     _npmVersion: '1.4.4',
+37 silly install resolved     _npmUser: { name: 'tjholowaychuk', email: 'tj@vision-media.ca' },
+37 silly install resolved     maintainers: [ [Object] ],
+37 silly install resolved     directories: {},
+37 silly install resolved     _shasum: 'e35f3ce6b42586b7f3ded7b5b0a31a01bb0e1005',
+37 silly install resolved     _resolved: 'https://registry.npmjs.org/serve/-/serve-1.4.0.tgz',
+37 silly install resolved     readme: 'ERROR: No README data found!' } ]
+38 info install serve@1.4.0 into /usr/local/lib
+39 info installOne serve@1.4.0
+40 verbose installOne of serve to /usr/local/lib not in flight; installing
+41 verbose correctMkdir /Users/kevinwu/.npm/_locks correctMkdir not in flight; initializing
+42 verbose lock using /Users/kevinwu/.npm/_locks/serve-6627f39219900269.lock for /usr/local/lib/node_modules/serve
+43 silly install write writing serve 1.4.0 to /usr/local/lib/node_modules/serve
+44 verbose unbuild lib/node_modules/serve
+45 silly gentlyRm /usr/local/lib/node_modules/serve is being purged from base /usr/local
+46 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/serve
+47 verbose tar unpack /Users/kevinwu/.npm/serve/1.4.0/package.tgz
+48 verbose tar unpacking to /usr/local/lib/node_modules/serve
+49 silly gentlyRm /usr/local/lib/node_modules/serve is being purged
+50 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/serve
+51 silly gunzTarPerm modes [ '755', '644' ]
+52 error tar.unpack untar error /Users/kevinwu/.npm/serve/1.4.0/package.tgz
+53 verbose unlock done using /Users/kevinwu/.npm/_locks/serve-6627f39219900269.lock for /usr/local/lib/node_modules/serve
+54 verbose fstream_path /usr/local/lib/node_modules/serve
+55 verbose fstream_type Directory
+56 verbose fstream_class DirWriter
+57 verbose stack Error: EACCES: permission denied, mkdir '/usr/local/lib/node_modules/serve'
+57 verbose stack     at Error (native)
+58 verbose fstream_stack /usr/local/lib/node_modules/npm/node_modules/fstream/lib/dir-writer.js:35:25
+58 verbose fstream_stack /usr/local/lib/node_modules/npm/node_modules/mkdirp/index.js:47:53
+58 verbose fstream_stack FSReqWrap.oncomplete (fs.js:82:15)
+59 verbose cwd /Users/kevinwu/Desktop/React GoLang Project/Client
+60 error Darwin 14.5.0
+61 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "install" "-g" "serve"
+62 error node v4.4.5
+63 error npm  v2.15.5
+64 error path /usr/local/lib/node_modules/serve
+65 error code EACCES
+66 error errno -13
+67 error syscall mkdir
+68 error Error: EACCES: permission denied, mkdir '/usr/local/lib/node_modules/serve'
+68 error     at Error (native)
+68 error  { [Error: EACCES: permission denied, mkdir '/usr/local/lib/node_modules/serve']
+68 error   errno: -13,
+68 error   code: 'EACCES',
+68 error   syscall: 'mkdir',
+68 error   path: '/usr/local/lib/node_modules/serve',
+68 error   fstream_type: 'Directory',
+68 error   fstream_path: '/usr/local/lib/node_modules/serve',
+68 error   fstream_class: 'DirWriter',
+68 error   fstream_stack:
+68 error    [ '/usr/local/lib/node_modules/npm/node_modules/fstream/lib/dir-writer.js:35:25',
+68 error      '/usr/local/lib/node_modules/npm/node_modules/mkdirp/index.js:47:53',
+68 error      'FSReqWrap.oncomplete (fs.js:82:15)' ] }
+69 error Please try running this command again as root/Administrator.
+70 verbose exit [ -13, true ]
+71 verbose unbuild lib/node_modules/serve
+72 silly gentlyRm /usr/local/lib/node_modules/serve is being purged from base /usr/local
+73 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/serve
